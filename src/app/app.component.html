@@ -1,0 +1,30 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="form-group">
+        <label class="font-bold"><strong class="font-bold">Enter the task:</strong></label>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" [(ngModel)]="taskDescription" (keyup.enter)="isEditing ? updateTask() : saveTask()" placeholder="Enter a new task">
+          <div class="input-group-append ms-5">
+            <button class="btn btn-dark" type="button" (click)="saveTask()" [disabled]="isEditing">+ Add</button>
+            <button class="btn btn-primary" type="button" (click)="updateTask()" *ngIf="isEditing">Update</button>
+          </div>
+        </div>
+        <div *ngIf="error" class="text-danger mt-2">{{ error }}</div>
+      </div>
+      <h3 class="mt-4 font-extrabold">Tasks ({{ tasks.length }}):</h3>
+      <ul class="list-group">
+        <li *ngFor="let task of tasks; let i = index" class="list-group-item d-flex justify-content-between align-items-center">
+          <span>
+            <input type="checkbox" class="me-2" [(ngModel)]="task.completed" (change)="toggleCompletion(i)">
+            <span [class.completed]="task.completed">Task {{ i + 1 }}: {{ task.description }}</span>
+          </span>
+          <div>
+            <button class="btn btn-sm btn-warning me-2" (click)="editTask(i)" [disabled]="task.completed">Edit</button>
+            <button class="btn btn-sm btn-danger" (click)="deleteTask(i)">Delete</button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

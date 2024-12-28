@@ -1,0 +1,83 @@
+.container {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      margin-top: 50px;
+    }
+    .form-control {
+      border-radius: 50px;
+    }
+    .input-group-append .btn {
+      border-radius: 50px;
+    }
+    .list-group-item {
+      border: none;
+      border-bottom: 1px solid #f1f1f1;
+    }
+    .list-group-item:last-child {
+      border-bottom: none;
+    }
+    .btn-warning {
+      background-color: #ffca2c;
+      border: none;
+    }
+    .btn-danger {
+      background-color: #e3342f;
+      border: none;
+    }
+    .btn-primary {
+      background-color: #3490dc;
+      border: none;
+    }
+    .btn-dark {
+      background-color: #343a40;
+      border: none;
+    }
+    .btn {
+      border-radius: 50px;
+    }
+.container {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-top: 50px;
+  }
+  .form-control {
+    border-radius: 50px;
+  }
+  .input-group-append .btn {
+    border-radius: 50px;
+  }
+  .list-group-item {
+    border: none;
+    border-bottom: 1px solid #f1f1f1;
+  }
+  .list-group-item:last-child {
+    border-bottom: none;
+  }
+  .btn-warning {
+    background-color: #ffca2c;
+    border: none;
+  }
+  .btn-danger {
+    background-color: #e3342f;
+    border: none;
+  }
+  .btn-primary {
+    background-color: #3490dc;
+    border: none;
+  }
+  .btn-dark {
+    background-color: #343a40;
+    border: none;
+  }
+  .btn {
+    border-radius: 50px;
+  }
+  .completed {
+    text-decoration: line-through;
+    color: grey;
+  }
+  
